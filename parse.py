@@ -111,6 +111,8 @@ def createImage(file, boxes):
     # we write the pixels to the new file
     writer.write_array(annotated, pixels)
 
+    annotated.close()
+
 def annotate(file):
     # we generate an element tree of the nodes from the xml file
     tree = parseXML(sys.argv[1] + '/' + file)
