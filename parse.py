@@ -103,7 +103,7 @@ def createImage(file, boxes):
             pixels[pos * byte_width : (pos+1) * byte_width] = array.array('B', new_val)
 
     # we create a new png file or overwrite an existing one
-    annotated = open(sys.argv[1] + '/' + file + '-annotated.png', 'wb')
+    annotated = open(file + '-annotated.png', 'wb')
 
     # we create a writer object with the previous dimensions and metadata
     writer = png.Writer(w, h, **data)
