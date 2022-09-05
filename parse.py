@@ -1,8 +1,8 @@
 import xml.etree.ElementTree as ET
 import sys
 import os
-import png, array
-# python parse.py ../Programming-Assignment-Data
+import png
+import array
 
 def parseXML(file):
     # create element tree object
